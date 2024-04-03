@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+          padding: 30px;
+          font: normal 10pt Arial;
+        }
+  
+        .input {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-bottom: 10px;
+          resize: vertical;
+        }
+      </style>
+</head>
+<body>
+    <a href="#">Home</a>
+
+     <h1>Agendamento banho e tosa</h1>
+     <h2>Faça o seu agendamento com pelo menos 48h de antecedência</h2>
+
+     <form action="">
+        <fieldset>
+            <legend>Informações do dono do animal</legend>
+        <div>
+            <label>Nome:</label>
+            <input type="text" placeholder="Digite seu nome completo" class="input"> 
+        </div>
+        <div>
+            <label>Endereço:</label>
+            <input type="text" placeholder="Digite seu endereço"class="input">
+        </div>
+        <div>
+            <label>CEP:</label>
+            <input type="text" placeholder="XXXXX-XXX"class="input">
+        </div>
+        <div>
+            <label>E-mail:</label>
+            <input type="email" placeholder="email@email.com"class="input">
+        </div>
+        <div>
+            <label>Tel/Cel:</label>
+            <input type="tel" placeholder="99 99999-9999"class="input">
+        </div>
+        </fieldset>
+
+    <fieldset>
+        <legend>Animal</legend>
+   
+        <div>
+            <label>Nome:</label>
+            <input type="text" placeholder="Digite o nome do seu pet">
+        </div>
+        <div>
+            <label>Porte do cão</label>
+            <input type="radio" value="pequeno" name="porte-cao"> <label>Pequeno</label>
+            <input type="radio" value="medio" name="porte-cao"> <label>Médio</label>
+            <input type="radio" value="grande" name="porte-cao"> <label>Grande</label>
+        </div>
+        <Div>
+            <label>Tipo de tosa</label>
+            <select>
+                <option value="Nenhuma">Nenhuma</option>
+                <option value="Padrão">Tosa Padrão</option>
+                <option value="Higiênico">Tosa Higiênica</option>
+                <option value="Tesoura">Tosa na Tesoura</option>
+                <option value="Raça">Tosa de Raça</option>
+                <option value="Bebê">Tosa Bebê</option>
+            </select>
+        </Div>
+        <div>
+            <label>Observações:</label>
+            <textarea cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <label>Indique os dias da semana de sua preferência:</label>
+
+            <input type="checkbox" value="ter">
+            <label>Terça-feira</label>
+
+            <input type="checkbox" value="qua">
+            <label>Quarta-feira</label>
+
+            <input type="checkbox" value="qui">
+            <label>Quinta-feira</label>
+
+            <input type="checkbox" value="sex">
+            <label>Sexta-feira</label>
+
+            <input type="checkbox" value="sab">
+            <label>Sábado</label>
+        </div>
+        <div>
+            <label>Primeira opção de horário:</label>
+            <input type="time">
+        </div>
+        <div>
+            <label>Segunda opção de horário:</label>
+            <input type="time">
+        </div>
+    </fieldset>
+        <input type="submit" value="Enviar">
+     </form>
+</body>
+</html>
